@@ -1,0 +1,3 @@
+<footer>
+    <p>&copy; 2024 Gratade Alexandre. Tous droits réservés.</p>
+</footer>
