@@ -16,3 +16,4 @@ document.addEventListener("DOMContentLoaded", function() {
         pageContent.style.opacity = '1';
     }, 100);
 });
+

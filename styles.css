@@ -102,4 +102,43 @@
       padding: 15px;
     }
   }
+/* === Cards Projets === */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
   
+  .card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .card h3 {
+    margin-bottom: 10px;
+    color: #0077cc;
+  }
+  
+  .card p {
+    margin-bottom: 15px;
+  }
+  
+  .card a {
+    background-color: #0077cc;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+  }
+  
+  .card a:hover {
+    background-color: #005fa3;
+    transform: scale(1.02);
+  }
+    

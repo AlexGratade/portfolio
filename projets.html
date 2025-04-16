@@ -18,20 +18,33 @@
 
   <main>
     <section>
-      <h2>Projets Développés</h2>
+      <h2>Quelques projets réalisés</h2>
 
-      <article>
-        <h3>Projet Jardinier (Symfony)</h3>
-        <p>Application de gestion de jardin avec création et gestion des plantes, calendrier d’entretien et espace utilisateur sécurisé.</p>
-        <p><strong>Technologies :</strong> Symfony, MySQL, Bootstrap</p>
-      </article>
+      <div class="project-grid">
+        <div class="card">
+          <h3>Projet Jardinier</h3>
+          <p>Application Symfony pour la gestion de clients et de prestations d’un jardinier.</p>
+          <a href="#">Voir le projet</a>
+        </div>
 
-      <article>
-        <h3>MVC_ProjectResto (PHP MVC)</h3>
-        <p>Application de gestion de restaurant avec fonctionnalités pour la gestion des plats, réservations et commandes.</p>
-        <p><strong>Technologies :</strong> PHP, HTML, CSS, MVC maison</p>
-      </article>
+        <div class="card">
+          <h3>MVC_ProjectResto</h3>
+          <p>Site PHP MVC de gestion de restaurant avec commandes, plats, réservations.</p>
+          <a href="#">Voir le projet</a>
+        </div>
 
+        <div class="card">
+          <h3>Gestion Produits Java</h3>
+          <p>Application Java avec MVC pour gérer des produits informatiques.</p>
+          <a href="#">Voir le projet</a>
+        </div>
+
+        <div class="card">
+          <h3>API + Spring Boot</h3>
+          <p>Web app en Spring Boot connectée à une API RESTful pour gérer des données métiers.</p>
+          <a href="#">Voir le projet</a>
+        </div>
+      </div>
     </section>
   </main>
 
@@ -40,83 +53,3 @@
   </footer>
 </body>
 </html>
-
-
-
-<style >
- /* Conteneur des cartes */
-.cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    padding: 20px;
-}
-
-/* Carte principale */
-.card {
-    --background: linear-gradient(to right, #74ebd5 0%, #acb6e5 100%);
-    width: 220px;
-    height: 150px;
-    padding: 15px;
-    border-radius: 1rem;
-    background: var(--background);
-    position: relative;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-    text-decoration: none;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.card::before,
-.card::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 1rem;
-    z-index: -1;
-}
-
-.card::before {
-    background: linear-gradient(to bottom right, #f6d365 0%, #fda085 100%);
-    transform: rotate(2deg);
-}
-
-.card::after {
-    background: linear-gradient(to top right, #84fab0 0%, #8fd3f4 100%);
-    transform: rotate(-2deg);
-}
-
-/* Informations sur la carte */
-.card-info {
-    text-align: center;
-}
-
-.card-info h2 {
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.card-info p {
-    font-size: 0.9em;
-    color: rgba(255, 255, 255, 0.9);
-}
-
-/* Effets au survol */
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.card:hover::before,
-.card:hover::after {
-    opacity: 0;
-}
