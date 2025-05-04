@@ -2,12 +2,74 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Mes Projets - Portfolio Alexandre Gratade</title>
+  <title>Mes projets - Portfolio Alexandre Gratade</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    main {
+      padding: 40px 20px;
+      background-color: #f9f9f9;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card h3 {
+      margin: 15px 0 10px;
+    }
+    .card a {
+      display: inline-block;
+      margin: 10px 0 20px;
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Mes Projets</h1>
+    <h1>Mes projets</h1>
     <nav>
       <a href="index.html">Accueil</a>
       <a href="projets.html">Projets</a>
@@ -17,33 +79,36 @@
   </header>
 
   <main>
-    <section>
-      <h2>Quelques projets réalisés</h2>
-
-      <div class="project-grid">
-        <div class="card">
-          <h3>Projet Jardinier</h3>
-          <p>Application Symfony pour la gestion de clients et de prestations d’un jardinier.</p>
-          <a href="#">Voir le projet</a>
-        </div>
-
-        <div class="card">
-          <h3>MVC_ProjectResto</h3>
-          <p>Site PHP MVC de gestion de restaurant avec commandes, plats, réservations.</p>
-          <a href="#">Voir le projet</a>
-        </div>
-
-        <div class="card">
-          <h3>Gestion Produits Java</h3>
-          <p>Application Java avec MVC pour gérer des produits informatiques.</p>
-          <a href="#">Voir le projet</a>
-        </div>
-
-        <div class="card">
-          <h3>API + Spring Boot</h3>
-          <p>Web app en Spring Boot connectée à une API RESTful pour gérer des données métiers.</p>
-          <a href="#">Voir le projet</a>
-        </div>
+    <section class="grid">
+      <div class="card">
+        <img src="images/placeholder.jpg" alt="Illustration Projet Jardinier">
+        <h3>Projet Jardinier</h3>
+        <a href="projet-jardinier.html">Voir le projet</a>
+      </div>
+      <div class="card">
+        <img src="images/placeholder.jpg" alt="Illustration MVC_ProjectResto">
+        <h3>MVC_ProjectResto</h3>
+        <a href="projet-resto.html">Voir le projet</a>
+      </div>
+      <div class="card">
+        <img src="images/placeholder.jpg" alt="Illustration Projet Spring Boot">
+        <h3>Projet Spring Boot</h3>
+        <a href="projet-springboot.html">Voir le projet</a>
+      </div>
+      <div class="card">
+        <img src="images/placeholder.jpg" alt="Illustration Projet Analim">
+        <h3>Projet Analim</h3>
+        <a href="projet-analim.html">Voir le projet</a>
+      </div>
+      <div class="card">
+        <img src="images/placeholder.jpg" alt="Illustration Projet Flutter">
+        <h3>Projet Flutter</h3>
+        <a href="projet-flutter.html">Voir le projet</a>
+      </div>
+      <div class="card">
+        <img src="images/placeholder.jpg" alt="Illustration Gestion Parc Informatique">
+        <h3>Gestion Parc Informatique</h3>
+        <a href="projet-gestion-pc.html">Voir le projet</a>
       </div>
     </section>
   </main>
